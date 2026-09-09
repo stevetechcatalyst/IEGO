@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-iego-green: #00ab69;
+    --color-iego-teal: #0090b2;
+    --color-iego-cyan: #0092b3;
+    --color-iego-orange: #ff6b01;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #020617;
+    color: #f8fafc;
+  }
+}
+
+.bg-iego-green { background-color: #00ab69; }
+.text-iego-green { color: #00ab69; }
+.border-iego-green { border-color: #00ab69; }
+
+.bg-iego-teal { background-color: #0090b2; }
+.text-iego-teal { color: #0090b2; }
+.border-iego-teal { border-color: #0090b2; }
+
+.bg-iego-cyan { background-color: #0092b3; }
+.text-iego-cyan { color: #0092b3; }
+.border-iego-cyan { border-color: #0092b3; }
+
+.bg-iego-orange { background-color: #ff6b01; }
+.text-iego-orange { color: #ff6b01; }
+.border-iego-orange { border-color: #ff6b01; }
+
+/* Dynamic Glassmorphism Card Utilities */
+.glass-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 171, 105, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(0, 171, 105, 0.15);
+}
+
+.glass-card-teal-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-teal-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 144, 178, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(0, 144, 178, 0.15);
+}
+
+.glass-pill {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(71, 85, 105, 0.4);
+}
+

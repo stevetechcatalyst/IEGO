@@ -1,0 +1,6 @@
+{
+  "name": "IEGO - Inland Economic Growth & Opportunity",
+  "description": "Modernized regional economic development portal for the Inland Empire featuring a responsive card-based layout, interactive labor market data, and collaborative initiatives.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
